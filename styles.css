@@ -1,0 +1,265 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1F2937;
+    width: 100%;
+}
+
+.logo a {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    width: 11.5ch;
+    border-right: 3px solid;
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 600;
+    overflow: hidden;
+    animation: blink .5s infinite step-end alternate;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list li {
+    height: 50px;
+}
+
+.nav_link {
+    color: #E5E7EB;
+    font-size: 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 25px;
+    transition: .5s linear background;
+}
+
+.nav_link:hover {
+    background: #3B82F6;
+}
+
+/* Hero */
+
+.hero {
+    background-color: #1F2937;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background: url(./img/pexels-james-superschoolnews-349383308-23939503.jpg);
+
+    /* img */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 68px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin-bottom: 20px;
+    max-width: 500px;
+    line-height: 1.1;
+    filter: drop-shadow(0 0 0.75rem #E5E7EB);
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.btn-1 {
+    padding: 5px 25px;
+    background-color: #3B82F6;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #F9FAF8;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16.5px;
+}
+
+
+/* Cards */
+
+.cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.cards_container h2 {
+    text-align: center;
+    margin-block-end: 5rem;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 700;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 1.5rem;
+}
+
+.cards_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cards_content img {
+    width: 270px;
+    border: 2px solid #3B82F6;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.cards_content p {
+    text-align: center;
+    line-break: strict;
+}
+
+/* Testimonio */
+
+.quote {
+    height: 500px;
+    width: 100%;
+    background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+    position: relative;
+}
+
+.comilla {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.testi {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    max-width: 850px;
+}
+
+.mention {
+    text-align: end;
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+/* Inicio */
+.signup-section {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: flex-end;
+    background-color: #3B82F6;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px black;
+    margin: 128px 48px;
+    padding: 40px 60px;
+}
+
+.data h3 {
+    color: #F9FAF8;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.data p {
+    font-size: 17px;
+    color: #F9FAF8;
+}
+
+.btn-2 {
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    outline: none;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 5px 25px;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+
+.btn-2:hover {
+    transform: scale(.95);
+}
+
+/* footer */
+
+.container-footer {
+    background-color: #1F2937;
+    width: 100%;
+    padding: 30px;
+}
+
+.copy p {
+    color: #F9FAF8;
+    font-size: 15px;
+    text-align: center;
+}
